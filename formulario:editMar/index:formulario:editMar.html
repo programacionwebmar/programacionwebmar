@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<html lang="es">
+
+<head>
+
+  <meta name="author" content="María de los Ángeles Rivas Viamonte" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta http-equiv="Refresh" content="1600" />
+  <title> Investigación y Desarrollo editMar </title>
+  <link rel="stylesheet" href="/Users/programadormar/Desktop/editMar/formulario:editMar/formulario:editMar.css" />
+
+
+
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Investigación Editorialmar.com</h1>
+      <p id="description" class="description text-center">
+        Gracias por participar en la presente encuesta.
+      </p>
+    </header>
+    <form id="dstos-form">
+      <div class="form-group">
+        <label id="nombre" for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Enter your name" required />
+      </div>
+      <br>
+
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Registre su email" required />
+      </div>
+      <br>
+      <div class="form-group">
+        <label id="number-label" for="number"> Años<span class="clue">(optional)</span></label>
+        <input type="number" name="anos" id="anos" min="10" max="99" class="form-control" placeholder="Años" />
+      </div>
+
+      <br>
+      <div class="form-group">
+
+        <fieldset>
+          <legend> Caracterización del conocimiento actual </legend>
+          <p> ¿Qué tópico no comprendes de la programación?
+            <select id="programacion" name="programacion" class="form-control" required>
+              <option disabled selected value>Seleccione una opción</option>
+              <option value="student">Lenguaje o Código</option>
+              <option value="job">Estructura de Código</option>
+              <option value="learner">Funcionamiento del Sistema</option>
+              <option value="preferNo">Programa informático</option>
+              <option value="other">Otro</option>
+            </select>
+      </div>
+
+      <br>
+      <div class="form-group">
+        <p> ¿Qué tipo de lectura prefieres o requieres? </p>
+
+        <label> <input type="checkbox" name="libros"> Libros </label>
+        <label> <input type="checkbox" name="cuentos"> Cuentos</label>
+        <label> <input type="checkbox" name="novela"> Novela </label>
+        <label> <input type="checkbox" name="videoJuegos"> VideoJuegos</label>
+        <label> <input type="checkbox" name="Películas"> Películas </label>
+      </div>
+
+      <br>
+      <div class="form-group">
+        <p> ¿Qué tipo de Ciencias prefieres conocer?
+
+          <label>
+            <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Informática y afines</label>
+
+          <label>
+            <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Ciencias Sociales</label>
+
+          <label>
+            <input name="user-recommend" value="maybe" type="radio" class="input-radio" /> Entretenimiento</label>
+
+          <label>
+            <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Emprendimiento</label>
+
+
+      </div>
+
+
+      <div class="form-group">
+        <p>Algún comentario?</p>
+        <textarea id="comments" class="input-textarea" name="comment"
+          placeholder=" Puede dejar su comentario aquí..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Enviar
+        </button>
+      </div>
+    </form>
+  </div>
+  </body>
+
+</html>
